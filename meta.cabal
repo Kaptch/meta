@@ -23,7 +23,6 @@ library
                      , Meta.Frontend.AbsMeta
                      , Meta.Frontend.PrintMeta
                      , Meta.Frontend.ErrM
-                     , Meta.Frontend.LayoutMeta
                      , Meta.Backend
                      , Meta.Repl
   build-depends:       base
@@ -45,7 +44,6 @@ executable meta
                      , Meta.Frontend.AbsMeta
                      , Meta.Frontend.PrintMeta
                      , Meta.Frontend.ErrM
-                     , Meta.Frontend.LayoutMeta
                      , Meta.Backend
                      , Meta.Repl
   build-depends:       base
