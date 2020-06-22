@@ -1,0 +1,17 @@
+entrypoints Exp, ListExp ;
+
+comment "--" ;
+comment "{-" "-}" ;
+
+StringExp. Exp ::= String ;
+IntExp. Exp ::= Integer ;
+DoubleExp. Exp ::= Double ;
+SListExp. Exp ::= "(" [Exp] ")" ;
+QListExp. Exp ::= "'(" [Exp] ")" ;
+SymbolExp. Exp ::= Ident ;
+QSymbolExp. Exp ::= "'" Ident ;
+
+separator Exp "" ;
+
+-- position token PIdent (letter (letter|digit|'_'|'\'')*) ;
+-- terminator PIdent "" ;
